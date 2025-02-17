@@ -1,75 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Pop Mart Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f8f8f8;
-        }
-        header {
-            background: #ffcc00;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .about-section {
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .about-section h2 {
-            color: #ff6600;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Pop Mart Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="about-section">
-        <h2>About Pop Mart</h2>
-        <p>Welcome to Pop Mart, your ultimate destination for designer collectibles and limited edition art toys. We bring creativity and innovation to life with our exclusive figurines and blind box collections.</p>
-        <p>Founded with a passion for art and collectibles, Pop Mart collaborates with talented artists worldwide to create unique, high-quality products that bring joy to collectors of all ages.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Pop Mart Store. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    /* Footer */
+    footer {
+        background-color: #222;
+        color: #ddd;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-section {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    .footer-section h3 {
+        color: #ffc107;
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section p {
+        margin-bottom: 5px;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+    }
+
+    .footer-section a {
+        color: #ffc107;
+        text-decoration: none;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+    }
+
+    .payment-methods {
+        margin-top: 20px;
+    }
+
+    .payment-methods img {
+        margin-right: 1%;
+        max-width: fit-content;
+        max-height: 100px;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        font-family: 'Arial', sans-serif;
+        font-size: 12px;
+    }
+
+    .bx {
+        font-size: 250%;
+        color: #f7f4f4;
+        transition: transform 0.3s ease;
+    }
+
+    .bx:hover {
+        transition: transform 0.3s ease;
+        transform: scale(1.5);
+    }
+</style>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About</h3>
+            <p>Contact Number: <a href="tel:+6011-59547102"> +6011-59547102</a></p>
+            <p>Email: <a href="mailto:siangloh1123@gmail.com"> siangloh1123.gmail.com</a></p>
+            <p>Address: 77, Lorong Lembah Permai 3, 11200 Tanjung Bungah, Pulau Pinang</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/keatsiang.loh.9/"><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://twitter.com/loh_keat27481"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.youtube.com/channel/UCxPibdo_Najp4PNUgk1NyhQ"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.instagram.com/loh1123/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Online Store. All rights reserved.</p>
+    </div>
+    <div class="payment-methods">
+        <img src="images/cimb.jpg" alt="CIMB">
+        <img src="images/mastercard.jpg" alt="Mastercard">
+        <img src="images/hongleong.jpg" alt="hongleong">
+        <img src="images/maybank.jpg" alt="maybank">
+    </div>
+</footer>
