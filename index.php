@@ -61,7 +61,7 @@
 </head>
 <body>
     <header>
-        <h1>Pop Mart Store</h1>
+        <h1>Poh is gae</h1>
         <nav>
             <ul>
                 <li><a href="aboutUs.php">Home</a></li>
