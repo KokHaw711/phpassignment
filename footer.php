@@ -109,3 +109,7 @@
         <img src="images/mayBankLogo.png" alt="maybank">
     </div>
 </footer>
+
+</body>
+
+</html>
