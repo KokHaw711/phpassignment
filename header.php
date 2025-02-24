@@ -15,6 +15,9 @@
         }
 
         header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             background: #ffcc00;
             padding: 20px;
         }
@@ -72,7 +75,7 @@
 
 <body>
     <header>
-        <h1>Poh is gae</h1>
+        <h1>PopMart Store</h1>
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
