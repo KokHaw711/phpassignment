@@ -60,6 +60,7 @@
         margin-right: 1%;
         max-width: fit-content;
         max-height: 100px;
+        width: 23%;
     }
 
     .copyright {
@@ -102,9 +103,9 @@
         <p>&copy; 2024 Online Store. All rights reserved.</p>
     </div>
     <div class="payment-methods">
-        <img src="images/avor92r7l.webp" alt="CIMB">
-        <img src="images/mastercard.jpg" alt="Mastercard">
-        <img src="images/hongleong.jpg" alt="hongleong">
-        <img src="images/maybank.jpg" alt="maybank">
+        <img src="images/cimbBankLogo.png" alt="CIMB">
+        <img src="images/masterCardLogo.png" alt="Mastercard">
+        <img src="images/hongLeongBankLogo.png" alt="hongleong">
+        <img src="images/mayBankLogo.png" alt="maybank">
     </div>
 </footer>
