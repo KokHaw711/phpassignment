@@ -60,6 +60,7 @@
         margin-right: 1%;
         max-width: fit-content;
         max-height: 100px;
+        width: 23%;
     }
 
     .copyright {
@@ -85,7 +86,7 @@
         <div class="footer-section">
             <h3>About</h3>
             <p>Contact Number: <a href="tel:+6011-59547102">+60 11-1069 3749</a></p>
-            <p>Email: <a href="mailto:siangloh1123@gmail.com">pohtw-wm22@student.tarc.edu.my</a></p>
+            <p>Email: <a href="mailto:siangloh1123@gmail.com">pohtw-wm22@student.tarc.edu.myhkhk</a></p>
             <p>Address: Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur.</p>
         </div>
         <div class="footer-section">
@@ -102,9 +103,13 @@
         <p>&copy; 2024 Online Store. All rights reserved.</p>
     </div>
     <div class="payment-methods">
-        <img src="images/avor92r7l.webp" alt="CIMB">
-        <img src="images/mastercard.jpg" alt="Mastercard">
-        <img src="images/hongleong.jpg" alt="hongleong">
-        <img src="images/maybank.jpg" alt="maybank">
+        <img src="images/cimbBankLogo.png" alt="CIMB">
+        <img src="images/masterCardLogo.png" alt="Mastercard">
+        <img src="images/hongLeongBankLogo.png" alt="hongleong">
+        <img src="images/mayBankLogo.png" alt="maybank">
     </div>
 </footer>
+
+</body>
+
+</html>
