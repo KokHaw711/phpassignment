@@ -64,10 +64,10 @@
         <h1>Pop Mart Store</h1>
         <nav>
             <ul>
-                <li><a href="aboutUs.php">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="aboutUs.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
     </header>
