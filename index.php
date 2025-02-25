@@ -74,7 +74,7 @@
     
     <section id="home" class="hero">
         <h2>Discover the Magic of Collectibles</h2>
-        <p>Limited edition art toys and designer figurines.</p>
+        <p>Limited edition art toys and designer figurines.HelloAS</p>
         <a href="#products" class="btn">Shop Now</a>
     </section>
     
