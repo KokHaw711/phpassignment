@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Mart Style</title>
+    <title>PopZone Collectibles</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -11,23 +11,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
-        }
-        header {
-            background: #ffcc00;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
+            background: #F0FCFF;
         }
         .hero {
             background: #f4f4f4;
@@ -60,17 +44,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Pop Mart Store</h1>
-        <nav>
-            <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="product.php">Products</a></li>
-                <li><a href="aboutUs.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'header.php';?>
     
     <section id="home" class="hero">
         <h2>Discover the Magic of Collectibles</h2>
