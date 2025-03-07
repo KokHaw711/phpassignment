@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="products.php">Products</a></li>
+                <li><a href="product.php">Products</a></li>
                 <li><a href="aboutUs.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><button class="login-btn" onclick="openLoginPopup()">Login</button></li>
