@@ -21,7 +21,7 @@
     }
 
     .footer-section h3 {
-        color: #ffc107;
+        color: #835A36;
         font-family: 'Arial', sans-serif;
         font-size: 20px;
         margin-bottom: 10px;
