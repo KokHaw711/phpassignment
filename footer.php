@@ -8,7 +8,7 @@
 <body>
 
 <footer>
-    <div class="footer-container">
+    <div class="footer-container" >
         <div class="footer-content">
             <h3>Company Background</h3>
             <p>PopZone Collectibles is Malaysia’s go-to store for pop toys and collectibles, 
