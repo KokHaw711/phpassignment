@@ -45,7 +45,7 @@
 </head>
 <body>
     <?php include 'header.php';?>
-    <div style="height: 100vh">
+    <div>
     <section id="home" class="hero">
         <h2>Discover the Magic of Collectibles</h2>
         <p>Limited edition art toys and designer figurines.</p>
