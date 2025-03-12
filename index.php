@@ -11,6 +11,8 @@
         '/images/top2Product.png',
         '/images/top3Product.png',
         '/images/top4Product.png'
+
+        
     ];
 
     let i = 0;
