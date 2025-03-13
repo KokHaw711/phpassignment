@@ -24,6 +24,7 @@
             <div class="slide"><img src="/images/DC.jpg" alt="Product 2"><p>DC Series</p><p>From RM49.90</p></div>
             <div class="slide"><img src="/images/KungFuPanda.jpg" alt="Product 3"><p>Kung Fu Panda Series</p><p>From RM49.90</p></div>
             <div class="slide"><img src="/images/HarryPorter.jpg" alt="Product 4"><p>Harry Porter Series</p><p>From RM49.90</p></div>
+            <div class="slide"><img src="/images/KungFuPanda.jpg" alt="Product 3"><p>Kung Fu Panda Series</p><p>From RM49.90</p></div>
         </div>
         <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
