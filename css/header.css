@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #f9f9f7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-family: oswald;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a, .login-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    display: inline-block;
+}
+
+
+.login-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Login PopUp */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup input {
+    width: 70%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.popup button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.popup button:hover {
+    background: gray;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}

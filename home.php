@@ -3,107 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Mart Style</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: #ffcc00;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-        .hero {
-            background: #f4f4f4;
-            padding: 50px 20px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ff6600;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .product-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .product {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .product img {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <title>PopZone Collectibles</title>
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <header>
-        <h1>Pop Mart Store</h1>
-        <nav>
-            <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="product.php">Products</a></li>
-                <li><a href="aboutUs.php">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <h2>Discover the Magic of Collectibles</h2>
-        <p>Limited edition art toys and designer figurines.</p>
-        <a href="#products" class="btn">Shop Now</a>
-    </section>
-    
-    <section id="products" class="product-grid">
-        <div class="product">
-            <img src="images/top1Product.png" alt="Toy 1">
-            <h3>Figure A</h3>
-            <p>$15.99</p>
-            <button>Add to Cart</button>
+    <?php include 'header.php';?>
+    <div class="hero">
+        <div class="hero-overlay">
+            <h2>Discover the Magic of Collectibles</h2>
+            <p>Limited edition art toys and designer figurines.</p>
+            <a href="product.php" class="btn">ShopNow</a>
         </div>
-        <div class="product">
-            <img src="images/top2Product.png" alt="Toy 2">
-            <h3>Figure B</h3>
-            <p>$18.99</p>
-            <button>Add to Cart</button>
+    </div>
+
+    <h2 style="text-align: center;">New Arrivals</h2>
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <div class="slide"><img src="/images/Luffy.jpg" alt="Product 1"><p>Luffy Series</p><p>From RM49.90</p></div>
+            <div class="slide"><img src="/images/DC.jpg" alt="Product 2"><p>DC Series</p><p>From RM49.90</p></div>
+            <div class="slide"><img src="/images/KungFuPanda.jpg" alt="Product 3"><p>Kung Fu Panda Series</p><p>From RM49.90</p></div>
+            <div class="slide"><img src="/images/HarryPorter.jpg" alt="Product 4"><p>Harry Porter Series</p><p>From RM49.90</p></div>
+            <div class="slide"><img src="/images/KungFuPanda.jpg" alt="Product 3"><p>Kung Fu Panda Series</p><p>From RM49.90</p></div>
         </div>
-        <div class="product">
-            <img src="images/top3Product.png" alt="Toy 3">
-            <h3>Figure C</h3>
-            <p>$20.99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/top4Product.png" alt="Toy 3">
-            <h3>Figure D</h3>
-            <p>$24.99</p>
-            <button>Add to Cart</button>
-        </div>
-    </section>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script src="/js/home.js"></script>  
     <?php include 'footer.php'; ?>
 </body>
 </html>
