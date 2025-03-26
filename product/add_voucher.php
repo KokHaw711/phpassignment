@@ -1,12 +1,12 @@
 <?php
-include 'db.php';
+include '../db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $code = $_POST['code'];
     $discount = $_POST['discount'];
     $quantity = $_POST['quantity'];
     $expiry_date = !empty($_POST['expiry_date']) ? $_POST['expiry_date'] : NULL;
-    $status = "unused"; // Default status when adding
+    $status = "unused"; 
 
     $sql = "INSERT INTO vouchers (code, discount, status, quantity, created_at, expiry_date) 
             VALUES (?, ?, ?, ?, NOW(), ?)";
@@ -24,6 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Code: <input type="text" name="code" required>
     Discount: <input type="number" name="discount" step="0.01" required>
     Quantity: <input type="number" name="quantity" required>
-    Expiry Date: <input type="date" name="expiry_date"> <!-- Optional field -->
+    Expiry Date: <input type="date" name="expiry_date"> 
     <button type="submit">Add Voucher</button>
 </form>

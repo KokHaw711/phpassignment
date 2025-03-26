@@ -1,7 +1,6 @@
 <?php 
-include 'db.php'; // Ensure database connection
+include 'db.php'; 
 
-// Define sortable fields
 $fields = [
     'id'          => 'ID',
     'code'        => 'Code',
@@ -12,26 +11,21 @@ $fields = [
     'expiry_date' => 'Expiry Date'
 ];
 
-// Get sorting parameters from URL
 $sort = $_GET['sort'] ?? 'id';
 $dir = $_GET['dir'] ?? 'asc';
 
-// Validate sorting field
 if (!array_key_exists($sort, $fields)) {
     $sort = 'id';
 }
 $dir = ($dir === 'asc') ? 'asc' : 'desc';
 
-// Get search & filter parameters
 $status_filter = $_GET['status'] ?? '';
 $search_code = $_GET['search_code'] ?? '';
 
-// Prepare SQL query with filters and sorting
 $sql = "SELECT id, code, discount, status, quantity, created_at, expiry_date FROM vouchers WHERE 1=1";
 $params = [];
 $types = "";
 
-// Apply filters
 if (!empty($status_filter)) {
     $sql .= " AND status = ?";
     $params[] = $status_filter;
@@ -43,10 +37,8 @@ if (!empty($search_code)) {
     $types .= "s";
 }
 
-// Apply sorting
 $sql .= " ORDER BY $sort $dir";
 
-// Prepare and execute query
 $stmt = $conn->prepare($sql);
 if (!$stmt) {
     die("SQL Error: " . $conn->error);
@@ -59,7 +51,6 @@ if (!empty($params)) {
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Fetch data as objects
 $vouchers = [];
 while ($row = $result->fetch_object()) {
     $vouchers[] = $row;
@@ -71,13 +62,12 @@ while ($row = $result->fetch_object()) {
 <head>
     <meta charset="UTF-8">
     <title>Voucher List</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Make sure this path is correct -->
+    <link rel="stylesheet" href="./css/voucher.css"> 
 </head>
 <body>
 
 <h2>Voucher List</h2>
 
-<!-- Search and Filter Form -->
 <form method="GET">
     <input type="text" name="search_code" placeholder="Search by Code" value="<?= htmlspecialchars($search_code) ?>">
     <button type="submit">Search</button>
@@ -90,7 +80,6 @@ while ($row = $result->fetch_object()) {
     </select>
 </form>
 
-<!-- Table Display -->
 <table class="table">
     <tr>
         <?php foreach ($fields as $key => $label): ?>
@@ -114,8 +103,8 @@ while ($row = $result->fetch_object()) {
             <td><?= $s->created_at ?></td>
             <td><?= $s->expiry_date ?></td>
             <td>
-                <a href="edit_voucher.php?id=<?= $s->id ?>">Edit</a>
-                <a href="delete_voucher.php?id=<?= $s->id ?>" onclick="return confirm('Delete this voucher?')">Delete</a>
+                <a href="product/edit_voucher.php?id=<?= $s->id ?>">Edit</a>
+                <a href="product/delete_voucher.php?id=<?= $s->id ?>" onclick="return confirm('Delete this voucher?')">Delete</a>
             </td>
         </tr>
         <?php endforeach; ?>
@@ -124,7 +113,7 @@ while ($row = $result->fetch_object()) {
     <?php endif; ?>
 </table>
 
-<a href="add_voucher.php"><button>Add Voucher</button></a>
+<a href="product/add_voucher.php"><button>Add Voucher</button></a>
 
 </body>
 </html>

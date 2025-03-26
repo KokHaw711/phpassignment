@@ -1,14 +1,12 @@
 <?php
-include 'db.php';
+include '../db.php';
 
-// Validate the ID
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     die("Invalid voucher ID.");
 }
 
 $id = $_GET['id'];
 
-// Use prepared statements to prevent SQL injection
 $stmt = $conn->prepare("SELECT * FROM vouchers WHERE id = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -19,7 +17,6 @@ if (!$row) {
     die("Error: Voucher not found.");
 }
 
-// Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $code = $_POST['code'];
     $discount = $_POST['discount'];
