@@ -37,7 +37,7 @@ $arr = $_db->query('SELECT * FROM product')->fetchAll();
         <td><?= $p->productID ?></td>
         <td><?= $p->productName ?></td>
         <td><?= $p->categoryID ?></td>
-        <td><?= $p->productPrice ?></td>
+        <td>RM <?= $p->productPrice ?></td>
         <td><img src="/images/<?= $p->productPicture ?>" class="popup"></td>
         <td><?= $p->productDescription ?></td>
         <td><?= $p->productQuantity ?></td>
